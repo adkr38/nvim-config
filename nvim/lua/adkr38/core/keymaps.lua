@@ -3,14 +3,14 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- Exit INSERT mode with jk
-keymap.set("i", "jk","<ESC>")
+keymap.set("i", "jk", "<ESC>")
 -- Clear selection in NORMAL mode with <leader>nh
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- Delete character in NORMAL mode & don't copy it with x
-keymap.set("n","x",'"_x')
+keymap.set("n", "x", '"_x')
 -- Increment | Decrement numbers in NORMAL mode with <leader>+-
-keymap.set("n", "<leader>+","<C-a>")
-keymap.set("n", "<leader>-","<C-x>")
+keymap.set("n", "<leader>+", "<C-a>")
+keymap.set("n", "<leader>-", "<C-x>")
 
 -- Window management (NORMAL mode)
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -23,18 +23,16 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
-
 -- Run python script
-keymap.set("n","<leader>py", ":! python3 %<CR>")
+keymap.set("n", "<leader>py", ":! python3 %<CR>")
 
 -- Plugins
 
 -- vim-maximizer
-keymap.set("n","<leader>sm",":MaximizerToggle<CR>") -- maximize current tab
+keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- maximize current tab
 
 -- nvim-tree
-keymap.set("n","<leader>e",":NvimTreeToggle<CR>")
-
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -48,3 +46,6 @@ keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git 
 keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
+
+-- restart lsp server
+keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
