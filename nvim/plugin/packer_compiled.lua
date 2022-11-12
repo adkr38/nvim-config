@@ -226,10 +226,10 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
-  ["vim-css-color"] = {
+  ["vCoolor.vim"] = {
     loaded = true,
-    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vim-css-color",
-    url = "https://github.com/ap/vim-css-color"
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vCoolor.vim",
+    url = "https://github.com/KabbAmine/vCoolor.vim"
   },
   ["vim-maximizer"] = {
     loaded = true,
