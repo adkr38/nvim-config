@@ -9,8 +9,14 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- Delete character in NORMAL mode & don't copy it with x
 keymap.set("n", "x", '"_x')
 -- Increment | Decrement numbers in NORMAL mode with <leader>+-
-keymap.set("n", "<leader>+", "<C-a>")
-keymap.set("n", "<leader>-", "<C-x>")
+keymap.set("n", "+", "<C-a>")
+keymap.set("n", "-", "<C-x>")
+
+-- Delete word backwards
+keymap.set("n", "dq", 'vb"_d')
+
+-- Select all
+keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Window management (NORMAL mode)
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -22,9 +28,6 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
-
--- Run python script
-keymap.set("n", "<leader>py", ":! python3 %<CR>")
 
 -- Plugins
 

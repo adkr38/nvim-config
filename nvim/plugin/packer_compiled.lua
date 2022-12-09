@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -148,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -230,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vCoolor.vim",
     url = "https://github.com/KabbAmine/vCoolor.vim"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-maximizer"] = {
     loaded = true,

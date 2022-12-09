@@ -65,11 +65,12 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-
+	use({ "svrana/neosolarized.nvim", requires = { "tjdevries/colorbuddy.nvim" } })
 	use("windwp/nvim-autopairs")
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 	use("lewis6991/gitsigns.nvim")
 	use("KabbAmine/vCoolor.vim")
+	use("ThePrimeagen/vim-be-good")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
