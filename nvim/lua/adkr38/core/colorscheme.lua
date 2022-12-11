@@ -4,9 +4,7 @@ if not status then
 	return
 end
 
-n.setup({
-	commit_italics = true,
-})
+n.setup({})
 
 local colorbuddy = require("colorbuddy.init")
 local Color = colorbuddy.Color

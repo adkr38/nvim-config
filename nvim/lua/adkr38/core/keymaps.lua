@@ -2,13 +2,13 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- Exit INSERT mode with jk
-keymap.set("i", "jk", "<ESC>")
--- Clear selection in NORMAL mode with <leader>nh
-keymap.set("n", "<leader>nh", ":nohl<CR>")
--- Delete character in NORMAL mode & don't copy it with x
+-- Half page & center
+keymap.set("n", "<C-d>", "<C-d>zz") -- Down
+keymap.set("n", "<C-u>", "<C-u>zz") -- Up
+
+-- Delete character in NORMAL mode & don't save to register with x
 keymap.set("n", "x", '"_x')
--- Increment | Decrement numbers in NORMAL mode with <leader>+-
+-- Increment | Decrement numbers in NORMAL mode with +-
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
@@ -52,3 +52,7 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 
 -- restart lsp server
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+--zen mode
+
+keymap.set("n", "<leader>zm", "<cmd>ZenMode<cr>", { silent = true })
