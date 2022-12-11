@@ -32,7 +32,6 @@ return packer.startup(function(use)
 	-- Plugins start
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
-	use("folke/tokyonight.nvim")
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
 	use("tpope/vim-surround")
@@ -69,8 +68,11 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 	use("lewis6991/gitsigns.nvim")
-	use("KabbAmine/vCoolor.vim")
 	use("ThePrimeagen/vim-be-good")
+	use("folke/zen-mode.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
