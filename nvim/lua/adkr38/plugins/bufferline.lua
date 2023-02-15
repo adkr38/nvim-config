@@ -3,6 +3,8 @@ if not status then
 	return
 end
 
+-- local highlights = require("beigesilver.plugins.bufferline")
+
 bufferline.setup({
 	options = {
 		mode = "tabs",
