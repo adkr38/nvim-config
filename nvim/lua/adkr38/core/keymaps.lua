@@ -19,7 +19,7 @@ keymap.set("n", "-", "<C-x>")
 keymap.set("n", "dq", 'vb"_d')
 
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
+keymap.set("n", "<leader>a", "gg<S-v>G")
 
 -- Window management (NORMAL mode)
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -57,4 +57,4 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 --zen mode
-keymap.set("n", "<leader>zm", "<cmd>ZenMode<cr>", { silent = true })
+keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { silent = true })

@@ -89,6 +89,16 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  beigesilver = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/beigesilver",
+    url = "https://github.com/adkr38/beigesilver.nvim"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -174,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -211,6 +226,11 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -226,20 +246,10 @@ _G.packer_plugins = {
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
-  },
-  ["vCoolor.vim"] = {
-    loaded = true,
-    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vCoolor.vim",
-    url = "https://github.com/KabbAmine/vCoolor.vim"
   },
   ["vim-be-good"] = {
     loaded = true,
@@ -260,6 +270,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/Users/adrian38/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 

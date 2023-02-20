@@ -70,8 +70,14 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 	use("ThePrimeagen/vim-be-good")
 	use("folke/zen-mode.nvim")
+	use("sainnhe/everforest")
+
 	use("norcalli/nvim-colorizer.lua")
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+	use({
+		"rose-pine/neovim",
+		as = "rose-pine",
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
