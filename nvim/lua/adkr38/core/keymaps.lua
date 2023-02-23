@@ -58,3 +58,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 --zen mode
 keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { silent = true })
+
+--code actions
+keymap.set("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<cr>")
