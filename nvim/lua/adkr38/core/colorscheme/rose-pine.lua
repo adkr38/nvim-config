@@ -1,11 +1,13 @@
 require("rose-pine").setup({
-	--- @usage 'main' | 'moon'
+	--- @usage 'auto'|'main'|'moon'|'dawn'
+	variant = "auto",
+	--- @usage 'main'|'moon'|'dawn'
 	dark_variant = "main",
-	bold_vert_split = true,
-	dim_nc_background = true,
-	disable_background = false,
-	disable_float_background = true,
-	disable_italics = false,
+	bold_vert_split = false,
+	dim_nc_background = false,
+	disable_background = true,
+	disable_float_background = false,
+	disable_italics = true,
 
 	--- @usage string hex value or named color from rosepinetheme.com/palette
 	groups = {
@@ -34,8 +36,13 @@ require("rose-pine").setup({
 	},
 
 	-- Change specific vim highlight groups
+	-- https://github.com/rose-pine/neovim/wiki/Recipes
 	highlight_groups = {
 		ColorColumn = { bg = "rose" },
+
+		-- Blend colours against the "base" background
+		CursorLine = { bg = "foam", blend = 10 },
+		StatusLine = { fg = "love", bg = "love", blend = 10 },
 	},
 })
 
