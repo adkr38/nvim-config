@@ -1,6 +1,6 @@
 require("zen-mode").setup({
 	window = {
-		width = 120,
+		width = 160,
 		options = {
 			number = true,
 			relativenumber = true,
@@ -10,6 +10,6 @@ require("zen-mode").setup({
 
 vim.keymap.set("n", "<leader>zz", function()
 	require("zen-mode").toggle()
-	vim.wo.wrap = false
+	vim.wo.wrap =false
 	ColorMyPencils()
 end)
