@@ -61,3 +61,4 @@ keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { silent = true })
 
 --code actions
 keymap.set("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<cr>")
+keymap.set("v", "<leader>ca", ":lua vim.lsp.buf.code_action()<cr>")
