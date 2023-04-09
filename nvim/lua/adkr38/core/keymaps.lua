@@ -62,3 +62,9 @@ keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { silent = true })
 --code actions
 keymap.set("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<cr>")
 keymap.set("v", "<leader>ca", ":lua vim.lsp.buf.code_action()<cr>")
+
+--Run current python script
+keymap.set("n", "<leader>py", "<cmd>:w|!source ./venv/bin/activate|python3 %<cr>")
+
+--Run current go script
+keymap.set("n", "<leader>go", "<cmd>:w|!go run %<cr>")
