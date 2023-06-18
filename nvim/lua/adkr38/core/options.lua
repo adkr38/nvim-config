@@ -34,4 +34,5 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- Cursor on insert mode
-opt.guicursor = "i-ci:blinkon1"
+opt.guicursor = "n:-blinkon100-blinkoff200"
+--opt.guicursor = "i-ci:blinkon1"

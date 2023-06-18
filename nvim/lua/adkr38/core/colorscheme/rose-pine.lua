@@ -5,14 +5,16 @@ require("rose-pine").setup({
 	dark_variant = "main",
 	bold_vert_split = false,
 	dim_nc_background = false,
-	disable_background = true,
+	disable_background = false,
 	disable_float_background = false,
-	disable_italics = true,
+	disable_italics = false,
 
 	--- @usage string hex value or named color from rosepinetheme.com/palette
 	groups = {
 		background = "base",
+		background_nc = "_experimental_nc",
 		panel = "surface",
+		panel_nc = "base",
 		border = "highlight_med",
 		comment = "muted",
 		link = "iris",
@@ -46,5 +48,5 @@ require("rose-pine").setup({
 	},
 })
 
--- set colorscheme after options
+-- Set colorscheme after options
 vim.cmd("colorscheme rose-pine")

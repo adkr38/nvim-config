@@ -6,7 +6,7 @@ end
 saga.setup({
 	diagnostics = {
 		on_insert = false,
-		on_insert_follow = true,
+		on_insert_follow = false,
 	},
 	symbol_in_winbar = {
 		separator = "  ",
