@@ -11,7 +11,6 @@ lsp.ensure_installed({
   "lua_ls",
 })
 
--- Fix Undefined global 'vim'
 lsp.configure('lua_ls', {
     settings = {
         Lua = {
@@ -20,6 +19,12 @@ lsp.configure('lua_ls', {
             }
         }
     }
+})
+
+lsp.configure('gopls', {
+	single_file_support = true,
+	on_attach = function(client,bufnr)
+	end
 })
 
 lsp.configure('pyright', {
