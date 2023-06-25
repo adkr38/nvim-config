@@ -40,6 +40,10 @@ vim.opt.guicursor = "n:-blinkon100-blinkoff200"
 vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
+
+--disable sql omnicomplete
+vim.g.omni_sql_no_default_maps = 1
+
 --yank highlighting
 
 local augroup = vim.api.nvim_create_augroup
